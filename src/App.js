@@ -9,10 +9,10 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' element ={<Home/>}></Route>
-      <Route path='/auth' element ={<Auth/>}></Route>
-      <Route  path='/add/:id' element ={<Add/>}></Route>
-      <Route path='/View' element ={<View/>}></Route>
+      <Route exact path='/' element ={<Home/>}></Route>
+      <Route exact path='/auth' element ={<Auth/>}></Route>
+      <Route  exact path='/add/:id' element ={<Add/>}></Route>
+      <Route exact path='/View' element ={<View/>}></Route>
     
     </Routes>
    </BrowserRouter>

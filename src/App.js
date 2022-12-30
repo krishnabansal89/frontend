@@ -9,10 +9,10 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='https://frontend-yd5b.onrender.com/' element ={<Home/>}></Route>
-      <Route path='https://frontend-yd5b.onrender.com/auth' element ={<Auth/>}></Route>
-      <Route  path='https://frontend-yd5b.onrender.com/add/:id' element ={<Add/>}></Route>
-      <Route path='https://frontend-yd5b.onrender.com/View' element ={<View/>}></Route>
+      <Route path='/' element ={<Home/>}></Route>
+      <Route path='/auth' element ={<Auth/>}></Route>
+      <Route  path='/add/:id' element ={<Add/>}></Route>
+      <Route path='/View' element ={<View/>}></Route>
     
     </Routes>
    </BrowserRouter>

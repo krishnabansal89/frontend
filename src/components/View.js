@@ -23,7 +23,7 @@ export default function View() {
         let api = JSON.stringify({
             "id":id_send,
         })
-        let data = await fetch(('http://127.0.0.1:5000/api/main/delete'),
+        let data = await fetch(('https://backend-6lie.onrender.com/api/main/delete'),
             {
                 method:'POST',
                 headers:{ 
@@ -38,7 +38,7 @@ export default function View() {
     let item_data = ['2','2']
     const [item_get , setItem] = useState([])
     async function main(){
-        let data = await fetch(('http://127.0.0.1:5000/api/main/'),
+        let data = await fetch(('https://backend-6lie.onrender.com/api/main/'),
         {
             method:'POST',
             headers:{ 
@@ -71,7 +71,7 @@ export default function View() {
   return (
     <div className='container'>
         <Navbar/>
-    {!localStorage.getItem('id')? window.location.assign('http://localhost:3000/auth'):console.log('pass')}
+    {!localStorage.getItem('id')? window.location.assign('https://frontend-yd5b.onrender.com/auth'):console.log('pass')}
     {item_get.map((element)=>{
         return(<Item value={element.item} key={element._id} id={element._id}></Item>)
     })}

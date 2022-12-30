@@ -12,7 +12,7 @@ async function Submit(event) {
     let url = window.location.href
     let id = url.substring(26)
     let data1 = await JSON.stringify({item:text})
-    let api = await fetch('http://127.0.0.1:5000/api/main/new' , {
+    let api = await fetch('https://backend-6lie.onrender.com/api/main/new' , {
         method : "POST",
         headers :{
             "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export default function  Add() {
     useEffect(()=>{async function fetchdata(){
         let url = window.location.href
         let id = url.substring(26)
-        let api = await fetch('http://127.0.0.1:5000/api/auth/name' , {
+        let api = await fetch('https://backend-6lie.onrender.com/api/auth/name' , {
         method : 'GET',
         headers :{
             id : id,

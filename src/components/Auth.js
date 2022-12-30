@@ -16,7 +16,7 @@ async function sign(event) {
   }
   let data12 = await JSON.stringify(data)
   console.log(data)
-  let api = await fetch('http://127.0.0.1:5000/api/auth/singup' ,{
+  let api = await fetch('https://backend-6lie.onrender.com/api/auth/singup' ,{
       method : 'POST' , 
       headers: {
         'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ async function sign(event) {
       // console.log(api_json)
       localStorage.setItem("id",api_json)
       localStorage.setItem("name",name)
-      window.location.assign('http://localhost:3000/add/'+api_json)
+      window.location.assign('https://frontend-yd5b.onrender.com/add/'+api_json)
       // let tt = await api.json()
       // console.log(tt)
     }
@@ -53,7 +53,7 @@ async function Login(event) {
   }
   let data_op = await JSON.stringify(data)
   console.log(data_op , 'f')
-  let api =  await fetch('http://127.0.0.1:5000/api/auth/login',{
+  let api =  await fetch('https://backend-6lie.onrender.com/api/auth/login',{
       method : "POST",
       headers :{
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ async function Login(event) {
       let data11 = await api.json()
       localStorage.setItem("id" , data11.id)
       console.log(data11.id)
-      window.location.assign('http://localhost:3000/view')
+      window.location.assign('https://frontend-yd5b.onrender.com/view')
       // console.log(api.json().id)
     }
     else{

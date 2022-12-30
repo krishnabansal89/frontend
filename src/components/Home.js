@@ -2,10 +2,10 @@ import React from 'react'
 import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
 async function redirect() {
-    let iii = 'https://frontend-yd5b.onrender.com/add/'+localStorage.getItem('id')
+    let iii = 'https://frontend-yd5b.onrender.com/#/add/'+localStorage.getItem('id')
     await navigator.clipboard.writeText(iii)
     window.alert('Link copied to clipboard')
-    window.location.assign('https://frontend-yd5b.onrender.com/add/'+localStorage.getItem('id'))
+    window.location.assign('https://frontend-yd5b.onrender.com/#/add/'+localStorage.getItem('id'))
     
 }
 

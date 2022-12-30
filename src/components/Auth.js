@@ -28,7 +28,7 @@ async function sign(event) {
       // console.log(api_json)
       localStorage.setItem("id",api_json)
       localStorage.setItem("name",name)
-      window.location.assign('https://frontend-yd5b.onrender.com/add/'+api_json)
+      window.location.assign('https://frontend-yd5b.onrender.com/#/add/'+api_json)
       // let tt = await api.json()
       // console.log(tt)
     }
@@ -65,7 +65,7 @@ async function Login(event) {
       let data11 = await api.json()
       localStorage.setItem("id" , data11.id)
       console.log(data11.id)
-      window.location.assign('https://frontend-yd5b.onrender.com/view')
+      window.location.assign('https://frontend-yd5b.onrender.com/#/view')
       // console.log(api.json().id)
     }
     else{

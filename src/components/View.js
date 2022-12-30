@@ -71,7 +71,7 @@ export default function View() {
   return (
     <div className='container'>
         <Navbar/>
-    {!localStorage.getItem('id')? window.location.assign('https://frontend-yd5b.onrender.com/auth'):console.log('pass')}
+    {!localStorage.getItem('id')? window.location.assign('https://frontend-yd5b.onrender.com/#/auth'):console.log('pass')}
     {item_get.map((element)=>{
         return(<Item value={element.item} key={element._id} id={element._id}></Item>)
     })}

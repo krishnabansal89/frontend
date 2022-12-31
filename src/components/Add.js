@@ -10,7 +10,7 @@ async function Submit(event) {
     console.log(text)
     
     let url = window.location.href
-    let id = url.substring(26)
+    let id = url.substring(28)
     let data1 = await JSON.stringify({item:text})
     let api = await fetch('https://backend-6lie.onrender.com/api/main/new' , {
         method : "POST",
@@ -30,7 +30,7 @@ export default function  Add() {
     console.log(id,'f')
     useEffect(()=>{async function fetchdata(){
         let url = window.location.href
-        let id = url.substring(26)
+        let id = url.substring(28)
         let api = await fetch('https://backend-6lie.onrender.com/api/auth/name' , {
         method : 'GET',
         headers :{

@@ -16,7 +16,7 @@ async function Submit(event) {
         method : "POST",
         headers :{
             "Content-Type": "application/json",
-            "id" : localStorage.getItem("id"),
+            "id" : localStorage.getItem("id1"),
         },
         body:data1
     })
@@ -28,7 +28,7 @@ export default function  Add() {
     // let name = []
     const {id} = useParams()
     console.log(id,'f')
-    localStorage.setItem("id" , id)
+    localStorage.setItem("id1" , id)
     useEffect(()=>{async function fetchdata(){
         let url = window.location.href
         // let id = url.substring(28)
